@@ -65,6 +65,7 @@ export default {
       },
       fontFamily: {
         display: ["'Playfair Display'", "serif"],
+        bodoni: ["'Bodoni Moda'", "serif"],
         body: ["Inter", "sans-serif"],
       },
       keyframes: {
