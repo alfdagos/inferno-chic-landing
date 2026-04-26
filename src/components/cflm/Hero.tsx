@@ -34,7 +34,7 @@ const Hero = () => {
             Invito · 01 · 08 · 2026
           </p>
 
-          <h1 className="font-display font-black leading-[0.85] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
+          <h1 className="font-bodoni font-black leading-[0.88] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
             <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
             <span className="block text-[14vw] md:text-[7.5vw] text-foreground italic">
               BE<span className="text-blood not-italic">V</span>E
