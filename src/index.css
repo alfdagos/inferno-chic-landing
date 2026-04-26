@@ -80,6 +80,7 @@
 
 @layer utilities {
   .font-display { font-family: 'Playfair Display', serif; }
+  .font-bodoni { font-family: 'Bodoni Moda', serif; }
   .font-body { font-family: 'Inter', sans-serif; }
 
   .text-blood { color: hsl(var(--blood)); }
