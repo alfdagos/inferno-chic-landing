@@ -19,7 +19,7 @@ const Manifesto = () => (
         <p className="mt-12 max-w-3xl font-logo italic text-2xl md:text-4xl text-foreground/80 leading-snug">
           È quello che succede
           <br />
-          quando smetti di fare <span className="text-foreground not-italic font-bold">il bravo</span>.
+          quando smetti di fare <span className="text-blood not-italic font-bold">il bravo</span>.
         </p>
       </Reveal>
     </div>
