@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,900&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,900&family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -81,6 +81,7 @@
 @layer utilities {
   .font-display { font-family: 'Playfair Display', serif; }
   .font-bodoni { font-family: 'Bodoni Moda', serif; }
+  .font-logo { font-family: 'Cinzel', serif; font-feature-settings: "ss01"; }
   .font-body { font-family: 'Inter', sans-serif; }
 
   .text-blood { color: hsl(var(--blood)); }

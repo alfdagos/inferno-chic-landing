@@ -34,13 +34,13 @@ const Hero = () => {
             Invito · 01 · 08 · 2026
           </p>
 
-          <h1 className="font-bodoni font-black leading-[0.88] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
+          <h1 className="font-logo font-black leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
             <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
-            <span className="block text-[14vw] md:text-[7.5vw] text-foreground italic">
-              BE<span className="text-blood not-italic">V</span>E
+            <span className="block text-[14vw] md:text-[7.5vw] text-foreground">
+              BE<span className="text-blood">V</span>E
             </span>
-            <span className="block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2">
-              Comunque <span className="italic">Vada</span>
+            <span className="block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
+              Comunque <span className="text-blood">V</span>ada
             </span>
           </h1>
 
