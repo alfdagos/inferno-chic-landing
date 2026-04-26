@@ -83,7 +83,7 @@ const Hero = () => {
           <img
             src={logo}
             alt="CFLM Beve Comunque Vada"
-            className="relative z-10 mt-10 w-72 md:w-[26rem] mix-blend-screen invert flicker drop-shadow-[0_20px_60px_hsl(var(--blood)/.6)]"
+            className="relative z-10 mt-10 w-72 md:w-[26rem] flicker drop-shadow-[0_20px_60px_hsl(var(--blood)/.6)]"
             width={520}
             height={520}
           />
