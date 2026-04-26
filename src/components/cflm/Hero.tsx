@@ -15,7 +15,7 @@ const Hero = () => {
       <nav className="relative z-20 flex items-center justify-between px-6 py-6 md:px-12">
         <span className="font-display text-xl tracking-[0.3em] text-foreground">CFLM</span>
         <span className="hidden md:block text-xs tracking-[0.4em] uppercase text-foreground/70">
-          Estate · MMXXVI
+          Summer · MMXXVI
         </span>
         <button
           onClick={scrollToCTA}

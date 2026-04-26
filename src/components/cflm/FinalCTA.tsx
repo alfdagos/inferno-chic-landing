@@ -55,7 +55,7 @@ const FinalCTA = () => {
         <div className="mx-auto max-w-7xl px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
           <span className="font-display text-xl tracking-[0.3em] text-foreground">CFLM</span>
           <span className="text-xs uppercase tracking-[0.4em] text-foreground/40">
-            Estate MMXXVI · Beve Comunque Vada
+            Summer MMXXVI · Beve Comunque Vada
           </span>
           <span className="text-xs uppercase tracking-[0.4em] text-foreground/40">
             Bevi responsabilmente. <span className="italic">Forse.</span>
