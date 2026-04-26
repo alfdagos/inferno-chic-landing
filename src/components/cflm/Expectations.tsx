@@ -14,7 +14,7 @@ const Expectations = () => (
         <p className="text-xs uppercase tracking-[0.5em] text-blood mb-6">§ Cosa aspettarti</p>
       </Reveal>
       <Reveal delay={100}>
-        <h2 className="font-display text-5xl md:text-7xl text-foreground tracking-tight max-w-4xl">
+        <h2 className="font-logo text-5xl md:text-7xl text-foreground tracking-tight max-w-4xl">
           Poco. <span className="italic text-foreground/50">Ma bene.</span>
         </h2>
       </Reveal>
@@ -24,12 +24,12 @@ const Expectations = () => (
           <Reveal key={th.n} delay={i * 100}>
             <article className="group relative bg-background p-10 md:p-14 h-full overflow-hidden transition-colors duration-500 hover:bg-blood">
               <div className="flex items-start justify-between mb-10">
-                <span className="font-display italic text-foreground/30 group-hover:text-foreground/80 text-2xl transition-colors">
+                <span className="font-logo italic text-foreground/30 group-hover:text-foreground/80 text-2xl transition-colors">
                   {th.n}
                 </span>
                 <span className="text-blood group-hover:text-foreground text-2xl transition-colors">✦</span>
               </div>
-              <h3 className="font-display text-3xl md:text-5xl leading-[1.05] text-foreground">
+              <h3 className="font-logo text-3xl md:text-5xl leading-[1.05] text-foreground">
                 {th.t}
               </h3>
               <p className="mt-4 text-foreground/60 group-hover:text-foreground/90 italic">

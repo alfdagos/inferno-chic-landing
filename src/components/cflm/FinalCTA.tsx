@@ -16,14 +16,14 @@ const FinalCTA = () => {
           <p className="text-xs uppercase tracking-[0.5em] text-background/70 mb-10">§ Ultima chiamata</p>
         </Reveal>
         <Reveal delay={150}>
-          <h2 className="font-display text-5xl md:text-8xl leading-[0.95] tracking-tight text-background">
+          <h2 className="font-logo text-5xl md:text-8xl leading-[0.95] tracking-tight text-background">
             Puoi restare
             <br />
             a <span className="italic">casa</span>.
           </h2>
         </Reveal>
         <Reveal delay={350}>
-          <p className="mt-10 font-display italic text-2xl md:text-4xl text-background/85 max-w-2xl mx-auto">
+          <p className="mt-10 font-logo italic text-2xl md:text-4xl text-background/85 max-w-2xl mx-auto">
             Oppure avere una storia da raccontare <span className="not-italic underline decoration-2 underline-offset-4">male</span>.
           </p>
         </Reveal>
@@ -53,7 +53,7 @@ const FinalCTA = () => {
 
       <footer className="relative border-t border-background/20 bg-background py-10">
         <div className="mx-auto max-w-7xl px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-display text-xl tracking-[0.3em] text-foreground">CFLM</span>
+          <span className="font-logo text-xl tracking-[0.3em] text-foreground">CFLM</span>
           <span className="text-xs uppercase tracking-[0.4em] text-foreground/40">
             Summer MMXXVI · Beve Comunque Vada
           </span>

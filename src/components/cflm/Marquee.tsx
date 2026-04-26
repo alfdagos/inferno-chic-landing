@@ -11,7 +11,7 @@ const Marquee = ({ items, className = "", slow }: MarqueeProps) => {
       <div className={`marquee-track ${slow ? "marquee-track-slow" : ""}`}>
         {loop.map((t, i) => (
           <span key={i} className="inline-flex items-center gap-8 px-8">
-            <span className="font-display italic text-5xl md:text-7xl tracking-tight">{t}</span>
+            <span className="font-logo italic text-5xl md:text-7xl tracking-tight">{t}</span>
             <span aria-hidden className="text-blood text-5xl md:text-7xl">✦</span>
           </span>
         ))}

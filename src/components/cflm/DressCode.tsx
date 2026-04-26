@@ -13,12 +13,12 @@ const DressCode = () => (
         <p className="text-xs uppercase tracking-[0.5em] text-blood mb-8">§ Dress Code</p>
       </Reveal>
       <Reveal delay={150}>
-        <h2 className="font-display text-5xl md:text-8xl text-foreground leading-[0.95] tracking-tight max-w-3xl">
+        <h2 className="font-logo text-5xl md:text-8xl text-foreground leading-[0.95] tracking-tight max-w-3xl">
           Vestiti <span className="italic text-blood">bene</span>.
         </h2>
       </Reveal>
       <Reveal delay={350}>
-        <p className="mt-10 font-display italic text-2xl md:text-4xl text-foreground/75 max-w-2xl">
+        <p className="mt-10 font-logo italic text-2xl md:text-4xl text-foreground/75 max-w-2xl">
           O almeno prova a non rovinare le foto.
         </p>
       </Reveal>

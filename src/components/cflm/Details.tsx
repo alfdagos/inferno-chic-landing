@@ -30,7 +30,7 @@ const Details = () => (
                 <span className="col-span-12 md:col-span-3 text-xs uppercase tracking-[0.4em] text-foreground/50">
                   {it.k}
                 </span>
-                <span className="col-span-8 md:col-span-6 font-display text-3xl md:text-5xl text-foreground group-hover:text-blood transition-colors duration-500">
+                <span className="col-span-8 md:col-span-6 font-logo text-3xl md:text-5xl text-foreground group-hover:text-blood transition-colors duration-500">
                   {it.v}
                 </span>
                 <span className="col-span-4 md:col-span-3 text-right text-xs uppercase tracking-[0.3em] text-foreground/40 italic">

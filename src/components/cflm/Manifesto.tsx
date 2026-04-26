@@ -9,14 +9,14 @@ const Manifesto = () => (
         <p className="mb-10 text-xs uppercase tracking-[0.5em] text-blood">§ Manifesto</p>
       </Reveal>
       <Reveal delay={120}>
-        <h2 className="font-display text-5xl md:text-8xl leading-[1] tracking-tight text-foreground">
+        <h2 className="font-logo text-5xl md:text-8xl leading-[1] tracking-tight text-foreground">
           Non è una <span className="italic text-blood">festa</span>.
           <br />
           Non è un <span className="italic">evento</span>.
         </h2>
       </Reveal>
       <Reveal delay={300}>
-        <p className="mt-12 max-w-3xl font-display italic text-2xl md:text-4xl text-foreground/80 leading-snug">
+        <p className="mt-12 max-w-3xl font-logo italic text-2xl md:text-4xl text-foreground/80 leading-snug">
           È quello che succede
           <br />
           quando smetti di fare <span className="text-foreground not-italic font-bold">il bravo</span>.
