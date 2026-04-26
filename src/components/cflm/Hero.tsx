@@ -36,11 +36,11 @@ const Hero = () => {
 
           <h1 className="font-display font-black leading-[0.85] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
             <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
-            <span className="block text-[14vw] md:text-[7.5vw] text-foreground">
-              BE<span className="text-blood">V</span>E
+            <span className="block text-[14vw] md:text-[7.5vw] text-foreground italic">
+              BE<span className="text-blood not-italic">V</span>E
             </span>
-            <span className="block text-[10vw] md:text-[5.4vw] text-foreground/95 mt-2">
-              COMUNQUE <span className="text-blood">V</span>ADA
+            <span className="block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2">
+              Comunque <span className="italic">Vada</span>
             </span>
           </h1>
 
@@ -83,7 +83,7 @@ const Hero = () => {
           <img
             src={logo}
             alt="CFLM Beve Comunque Vada"
-            className="relative z-10 mt-10 w-72 md:w-[26rem] flicker drop-shadow-[0_20px_60px_hsl(var(--blood)/.6)] rounded-sm"
+            className="relative z-10 mt-10 w-72 md:w-[26rem] mix-blend-screen invert flicker drop-shadow-[0_20px_60px_hsl(var(--blood)/.6)]"
             width={520}
             height={520}
           />
