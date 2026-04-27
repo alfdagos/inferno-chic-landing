@@ -14,7 +14,7 @@ const DressCode = () => (
       </Reveal>
       <Reveal delay={150}>
         <h2 className="font-logo text-5xl md:text-8xl text-foreground leading-[0.95] tracking-tight max-w-3xl">
-          Vestiti <span className="italic text-blood">bene</span>.
+          <span data-text="Vestiti" className="glitch">Vestiti</span> <span className="italic text-blood">bene</span>.
         </h2>
       </Reveal>
       <Reveal delay={350}>
