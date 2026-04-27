@@ -19,12 +19,12 @@ const FinalCTA = () => {
           <h2 className="font-logo text-5xl md:text-8xl leading-[0.95] tracking-tight text-background">
             <span data-text="Puoi restare" className="glitch">Puoi restare</span>
             <br />
-            a <span className="italic">casa</span>.
+            a <span className="italic text-foreground">casa</span>.
           </h2>
         </Reveal>
         <Reveal delay={350}>
           <p className="mt-10 font-logo italic text-2xl md:text-4xl text-background/85 max-w-2xl mx-auto">
-            Oppure avere una storia da raccontare <br/><span className="not-italic underline decoration-2 underline-offset-4">male</span>.
+            Oppure avere una storia da raccontare <br/><span className="not-italic underline decoration-2 underline-offset-4 text-foreground">male</span>.
           </p>
         </Reveal>
 
