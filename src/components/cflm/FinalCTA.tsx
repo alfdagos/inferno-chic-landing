@@ -25,7 +25,7 @@ const FinalCTA = () => {
         <Reveal delay={350}>
           <p className="mt-10 font-logo italic text-2xl md:text-4xl text-background/85 max-w-2xl mx-auto">
             Oppure avere una storia da raccontare <br/>
-            <span className="not-italic underline decoration-2 underline-offset-4 text-foreground">male</span>.
+            <span className="not-italic underline decoration-2 underline-offset-4 text-foreground">come un sogno</span>.
           </p>
         </Reveal>
 
