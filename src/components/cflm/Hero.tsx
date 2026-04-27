@@ -60,10 +60,7 @@ const Hero = () => {
             >
               Segnatelo. O pentitene.
               <span className="transition-transform duration-500 group-hover:translate-x-2">→</span>
-            </button><br/>
-            <span className="text-xs uppercase tracking-[0.35em] text-foreground/50">
-              Posti? Non sono affari tuoi.
-            </span>
+            </button>
           </div>
         </div>
 
