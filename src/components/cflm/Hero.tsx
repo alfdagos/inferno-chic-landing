@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: ".6s" }}>
             <button
               onClick={scrollToCTA}
-              className="group relative inline-flex items-center gap-3 bg-foreground px-8 py-5 text-xs uppercase tracking-[0.35em] text-background pulse-blood hover:bg-blood hover:text-foreground transition-colors duration-500"
+              className="cta-aggressive group relative inline-flex items-center gap-3 bg-foreground px-8 py-5 text-xs uppercase tracking-[0.35em] text-background pulse-blood hover:bg-blood hover:text-foreground"
             >
               Segnatelo. O pentitene.
               <span className="transition-transform duration-500 group-hover:translate-x-2">→</span>
