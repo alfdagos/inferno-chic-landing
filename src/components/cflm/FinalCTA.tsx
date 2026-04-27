@@ -17,7 +17,7 @@ const FinalCTA = () => {
         </Reveal>
         <Reveal delay={150}>
           <h2 className="font-logo text-5xl md:text-8xl leading-[0.95] tracking-tight text-background">
-            Puoi restare
+            <span data-text="Puoi restare" className="glitch">Puoi restare</span>
             <br />
             a <span className="italic">casa</span>.
           </h2>
