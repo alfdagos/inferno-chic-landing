@@ -1,6 +1,7 @@
 import Hero from "@/components/cflm/Hero";
 import Manifesto from "@/components/cflm/Manifesto";
 import Gallery from "@/components/cflm/Gallery";
+import Countdown from "@/components/cflm/Countdown";
 import Details from "@/components/cflm/Details";
 import Expectations from "@/components/cflm/Expectations";
 import DressCode from "@/components/cflm/DressCode";
@@ -12,6 +13,7 @@ const Index = () => {
       <Hero />
       <Manifesto />
       <Gallery />
+      <Countdown />
       <Details />
       <Expectations />
       <DressCode />
