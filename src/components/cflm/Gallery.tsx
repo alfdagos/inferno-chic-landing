@@ -64,7 +64,7 @@ const Gallery = () => (
     <div className="pointer-events-none absolute left-[-10%] bottom-20 h-[360px] w-[360px] rounded-full bg-blood/10 blur-[120px]" />
 
     <div className="relative mx-auto max-w-[1400px] px-6 md:px-12">
-      <div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
+      <!-- div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
         <Reveal>
           <p className="text-xs uppercase tracking-[0.5em] text-blood mb-6">§ La Notte</p>
           <h2 className="font-logo text-5xl md:text-7xl leading-[0.95] tracking-tight text-foreground">
@@ -82,7 +82,7 @@ const Gallery = () => (
             <span className="text-blood not-italic">Solo quello che resta.</span>
           </p>
         </Reveal>
-      </div>
+      </div -->
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5">
         {tiles.map((t, i) => (
