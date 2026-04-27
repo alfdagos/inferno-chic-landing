@@ -64,26 +64,6 @@ const Gallery = () => (
     <div className="pointer-events-none absolute left-[-10%] bottom-20 h-[360px] w-[360px] rounded-full bg-blood/10 blur-[120px]" />
 
     <div className="relative mx-auto max-w-[1400px] px-6 md:px-12">
-      <!-- div className="mb-16 md:mb-24 flex flex-col md:flex-row md:items-end md:justify-between gap-8">
-        <Reveal>
-          <p className="text-xs uppercase tracking-[0.5em] text-blood mb-6">§ La Notte</p>
-          <h2 className="font-logo text-5xl md:text-7xl leading-[0.95] tracking-tight text-foreground">
-            Stasera <span className="italic text-blood">succede</span>.
-            <br />
-            Domani <span className="italic">non te lo</span> ricordi.
-          </h2>
-        </Reveal>
-        <Reveal delay={200}>
-          <p className="font-bodoni italic text-lg md:text-xl text-foreground/60 max-w-xs md:text-right">
-            Niente foto in posa.
-            <br />
-            Niente sorrisi finti.
-            <br />
-            <span className="text-blood not-italic">Solo quello che resta.</span>
-          </p>
-        </Reveal>
-      </div -->
-
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-5">
         {tiles.map((t, i) => (
           <Reveal key={i} delay={i * 90} className={t.className}>
