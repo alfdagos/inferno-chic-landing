@@ -24,7 +24,8 @@ const FinalCTA = () => {
         </Reveal>
         <Reveal delay={350}>
           <p className="mt-10 font-logo italic text-2xl md:text-4xl text-background/85 max-w-2xl mx-auto">
-            Oppure avere una storia da raccontare <br/><span className="not-italic underline decoration-2 underline-offset-4 text-foreground">male</span>.
+            Oppure avere una storia da raccontare <br/>
+            <span className="not-italic underline decoration-2 underline-offset-4 text-foreground">male</span>.
           </p>
         </Reveal>
 
@@ -36,7 +37,7 @@ const FinalCTA = () => {
               className="cta-aggressive group relative inline-flex items-center gap-4 bg-background px-12 py-7 text-sm md:text-base uppercase tracking-[0.35em] text-foreground hover:bg-foreground hover:text-background disabled:opacity-90"
             >
               {confirmed ? (
-                <>Annotato. Non deluderci. <span className="text-blood">●</span></>
+                <>Gasati!. Non deluderci. <span className="text-blood">●</span></>
               ) : (
                 <>
                   Io vengo. Poi si vede.
@@ -45,7 +46,7 @@ const FinalCTA = () => {
               )}
             </button>
             <span className="text-xs uppercase tracking-[0.4em] text-background/60">
-              Nessuna conferma. Nessuna lista. Solo presenza.
+              Lista esclusiva. Conferma rapida. Notte di sogni.
             </span>
           </div>
         </Reveal>
