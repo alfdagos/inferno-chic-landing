@@ -49,7 +49,6 @@ const tiles: Tile[] = [
     h: 1280,
   },
   {
-    src: bar {
     src: bar,
     alt: "Bancone bar con file di cocktail rossi e fumo",
     className: "md:col-span-8 aspect-[16/10] md:h-[460px]",
