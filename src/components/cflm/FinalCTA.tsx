@@ -37,7 +37,7 @@ const FinalCTA = () => {
               className="cta-aggressive group relative inline-flex items-center gap-4 bg-background px-12 py-7 text-sm md:text-base uppercase tracking-[0.35em] text-foreground hover:bg-foreground hover:text-background disabled:opacity-90"
             >
               {confirmed ? (
-                <>Gasati!. Non deluderci. <span className="text-blood">●</span></>
+                <>Gasati! Non deluderci. <span className="text-blood">●</span></>
               ) : (
                 <>
                   Io vengo. Poi si vede.
