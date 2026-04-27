@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const things = [
   { n: "01", t: "Drink che non ricorderai", s: "di aver ordinato" },
   { n: "02", t: "Gente che non dimenticherai", s: "anche volendo" },
-  { n: "03", t: "Decisioni discutibili", s: "ma estetiche" },
+  { n: "03", t: "Trucco perfetto", s: "fino al terzo drink" },
   { n: "04", t: "Zero rimorsi", s: "(forse)" },
 ];
 
