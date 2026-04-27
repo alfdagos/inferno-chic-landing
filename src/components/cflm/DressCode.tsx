@@ -27,7 +27,7 @@ const DressCode = () => (
           {["Tacchi", "Seta", "Pelle", "Nero", "Rosso sangue", "Niente sneakers", "No felpe", "Profumo costoso"].map((t) => (
             <span
               key={t}
-              className="border border-foreground/30 px-5 py-2 text-xs uppercase tracking-[0.3em] text-foreground/80 hover:bg-blood hover:border-blood hover:text-foreground transition-colors cursor-default"
+              className="badge-aggressive border border-foreground/30 px-5 py-2 text-xs uppercase tracking-[0.3em] text-foreground/80 hover:bg-blood hover:border-blood hover:text-foreground cursor-default"
             >
               {t}
             </span>
