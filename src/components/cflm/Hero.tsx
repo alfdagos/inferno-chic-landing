@@ -35,11 +35,11 @@ const Hero = () => {
           </p>
 
           <h1 className="font-logo font-normal leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
-            <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
-            <span className="block text-[14vw] md:text-[7.5vw] text-foreground">
+            <span data-text="CFLM" className="glitch block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
+            <span data-text="BEVE" className="glitch block text-[14vw] md:text-[7.5vw] text-foreground">
               BE<span className="text-blood">V</span>E
             </span>
-            <span className="block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
+            <span data-text="Comunque Vada" className="glitch block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
               Comunque <span className="text-blood">V</span>ada
             </span>
           </h1>
@@ -56,7 +56,7 @@ const Hero = () => {
           <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: ".6s" }}>
             <button
               onClick={scrollToCTA}
-              className="group relative inline-flex items-center gap-3 bg-foreground px-8 py-5 text-xs uppercase tracking-[0.35em] text-background pulse-blood hover:bg-blood hover:text-foreground transition-colors duration-500"
+              className="cta-aggressive group relative inline-flex items-center gap-3 bg-foreground px-8 py-5 text-xs uppercase tracking-[0.35em] text-background pulse-blood hover:bg-blood hover:text-foreground"
             >
               Segnatelo. O pentitene.
               <span className="transition-transform duration-500 group-hover:translate-x-2">→</span>

@@ -162,3 +162,104 @@
   50%     { transform: translateY(-14px) rotate(.6deg); }
 }
 .float-slow { animation: float-slow 7s ease-in-out infinite; }
+
+/* ===== Aggressive micro-interactions ===== */
+
+/* Glitch on hover for headlines */
+@keyframes glitch-shift {
+  0%   { transform: translate(0,0); clip-path: inset(0 0 0 0); }
+  10%  { transform: translate(-2px, 1px); clip-path: inset(10% 0 70% 0); }
+  20%  { transform: translate(3px, -1px); clip-path: inset(60% 0 20% 0); }
+  30%  { transform: translate(-1px, 2px); clip-path: inset(30% 0 50% 0); }
+  40%  { transform: translate(2px, 0); clip-path: inset(80% 0 5% 0); }
+  50%  { transform: translate(-3px, -2px); clip-path: inset(20% 0 60% 0); }
+  60%  { transform: translate(1px, 1px); clip-path: inset(50% 0 30% 0); }
+  70%  { transform: translate(-2px, 0); clip-path: inset(15% 0 75% 0); }
+  80%  { transform: translate(2px, -1px); clip-path: inset(65% 0 10% 0); }
+  100% { transform: translate(0,0); clip-path: inset(0 0 0 0); }
+}
+
+.glitch {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  transition: text-shadow .25s ease, transform .25s ease;
+}
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  mix-blend-mode: screen;
+}
+.glitch::before { color: hsl(var(--blood)); text-shadow: 2px 0 hsl(var(--blood) / .9); }
+.glitch::after  { color: hsl(195 100% 60%); text-shadow: -2px 0 hsl(195 100% 60% / .8); }
+.glitch:hover {
+  text-shadow: 0 0 24px hsl(var(--blood) / .65), 0 0 2px hsl(var(--blood) / .9);
+}
+.glitch:hover::before { opacity: .85; animation: glitch-shift .55s steps(8,end) both; }
+.glitch:hover::after  { opacity: .75; animation: glitch-shift .55s steps(8,end) reverse both; animation-delay: .04s; }
+
+/* Controlled red glow for CTAs */
+@keyframes ember-breath {
+  0%,100% { box-shadow: 0 0 0 0 hsl(var(--blood)/.55), 0 0 24px 0 hsl(var(--blood)/.35); }
+  50%     { box-shadow: 0 0 0 10px hsl(var(--blood)/0),   0 0 60px 6px hsl(var(--blood)/.55); }
+}
+.cta-aggressive {
+  position: relative;
+  transition: transform .35s cubic-bezier(.2,.8,.2,1), letter-spacing .35s ease, background-color .4s ease, color .4s ease, box-shadow .4s ease;
+}
+.cta-aggressive::before {
+  content: "";
+  position: absolute; inset: -2px;
+  background: linear-gradient(120deg, transparent 30%, hsl(var(--blood)/.55) 50%, transparent 70%);
+  opacity: 0;
+  transition: opacity .3s ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+.cta-aggressive:hover {
+  transform: translateY(-2px) skewX(-2deg);
+  letter-spacing: .42em;
+  animation: ember-breath 1.4s ease-in-out infinite;
+}
+.cta-aggressive:hover::before {
+  opacity: 1;
+  animation: shine 1.1s ease-in-out infinite;
+}
+@keyframes shine {
+  0%   { transform: translateX(-120%); }
+  100% { transform: translateX(120%); }
+}
+
+/* Dress-code badge: aggressive snap + glow */
+.badge-aggressive {
+  position: relative;
+  overflow: hidden;
+  transition: transform .25s cubic-bezier(.5,1.6,.4,1), color .25s ease, background-color .25s ease, border-color .25s ease, box-shadow .35s ease, letter-spacing .25s ease;
+}
+.badge-aggressive::after {
+  content: "";
+  position: absolute; inset: 0;
+  background: radial-gradient(ellipse at center, hsl(var(--blood)/.55) 0%, transparent 65%);
+  opacity: 0;
+  transition: opacity .35s ease;
+  pointer-events: none;
+}
+.badge-aggressive:hover {
+  transform: translateY(-3px) skewX(-4deg) scale(1.04);
+  letter-spacing: .42em;
+  box-shadow: 0 10px 30px -10px hsl(var(--blood)/.7), inset 0 0 0 1px hsl(var(--blood));
+}
+.badge-aggressive:hover::after { opacity: .55; animation: ember-breath 1.6s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .glitch:hover::before,
+  .glitch:hover::after,
+  .cta-aggressive:hover,
+  .cta-aggressive:hover::before,
+  .badge-aggressive:hover,
+  .badge-aggressive:hover::after { animation: none !important; }
+}

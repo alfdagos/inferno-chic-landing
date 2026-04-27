@@ -17,7 +17,7 @@ const FinalCTA = () => {
         </Reveal>
         <Reveal delay={150}>
           <h2 className="font-logo text-5xl md:text-8xl leading-[0.95] tracking-tight text-background">
-            Puoi restare
+            <span data-text="Puoi restare" className="glitch">Puoi restare</span>
             <br />
             a <span className="italic">casa</span>.
           </h2>
@@ -33,7 +33,7 @@ const FinalCTA = () => {
             <button
               onClick={() => setConfirmed(true)}
               disabled={confirmed}
-              className="group relative inline-flex items-center gap-4 bg-background px-12 py-7 text-sm md:text-base uppercase tracking-[0.35em] text-foreground hover:bg-foreground hover:text-background transition-all duration-500 disabled:opacity-90"
+              className="cta-aggressive group relative inline-flex items-center gap-4 bg-background px-12 py-7 text-sm md:text-base uppercase tracking-[0.35em] text-foreground hover:bg-foreground hover:text-background disabled:opacity-90"
             >
               {confirmed ? (
                 <>Annotato. Non deluderci. <span className="text-blood">●</span></>
