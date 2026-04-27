@@ -33,7 +33,7 @@ const FinalCTA = () => {
             <button
               onClick={() => setConfirmed(true)}
               disabled={confirmed}
-              className="group relative inline-flex items-center gap-4 bg-background px-12 py-7 text-sm md:text-base uppercase tracking-[0.35em] text-foreground hover:bg-foreground hover:text-background transition-all duration-500 disabled:opacity-90"
+              className="cta-aggressive group relative inline-flex items-center gap-4 bg-background px-12 py-7 text-sm md:text-base uppercase tracking-[0.35em] text-foreground hover:bg-foreground hover:text-background disabled:opacity-90"
             >
               {confirmed ? (
                 <>Annotato. Non deluderci. <span className="text-blood">●</span></>
