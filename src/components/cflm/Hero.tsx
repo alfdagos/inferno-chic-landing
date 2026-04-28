@@ -1,5 +1,6 @@
 import logo from "@/assets/cflm-logo.png";
 import devilWoman from "@/assets/devil-woman-1.jpg";
+import DevilV from "./DevilV";
 
 const Hero = () => {
   const scrollToCTA = () => {
