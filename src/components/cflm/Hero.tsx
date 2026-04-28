@@ -38,10 +38,10 @@ const Hero = () => {
           <h1 className="font-logo font-normal leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
             <span data-text="CFLM" className="glitch block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
             <span data-text="BEVE" className="glitch block text-[14vw] md:text-[7.5vw] text-foreground">
-              BE<DevilV className="text-blood" />E
+              BE<DevilV />E
             </span>
             <span data-text="Comunque Vada" className="glitch block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
-              Comunque <DevilV className="text-blood" />ADA
+              Comunque <DevilV />ADA
             </span>
           </h1>
 
