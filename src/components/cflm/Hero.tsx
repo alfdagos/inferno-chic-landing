@@ -35,7 +35,7 @@ const Hero = () => {
             Invito · 01 · 08 · 2026
           </p>
 
-          <h1 className="font-logo font-normal leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
+          <h1 className="text-center font-logo font-normal leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
             <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
             <br/><span className="block text-[14vw] md:text-[7.5vw] text-foreground">
               BE<img
