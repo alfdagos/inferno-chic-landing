@@ -52,7 +52,7 @@ const Hero = () => {
                 alt="V"
                 aria-label="V"
                 style={{ verticalAlign: "baseline" }}
-                className="inline-block h-[0.95em] w-auto mx-[-0.02em] drop-shadow-[0_0_18px_hsl(var(--blood)/.6)]"
+                className="inline-block h-[0.95em] w-auto ml-[0.08em] -mr-[0.08em] drop-shadow-[0_0_18px_hsl(var(--blood)/.6)]"
               />ada
             </span>
           </h1>
