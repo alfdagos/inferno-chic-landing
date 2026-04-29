@@ -1,5 +1,6 @@
 import logo from "@/assets/cflm-logo.png";
 import devilWoman from "@/assets/devil-woman-1.jpg";
+import devilV from "@/assets/devil-v.png";
 
 const Hero = () => {
   const scrollToCTA = () => {
@@ -37,10 +38,20 @@ const Hero = () => {
           <h1 className="font-logo font-normal leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
             <span data-text="CFLM" className="glitch block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
             <span data-text="BEVE" className="glitch block text-[14vw] md:text-[7.5vw] text-foreground">
-              BE<span className="text-blood">V</span>E
+              BE<img
+                src={devilV}
+                alt="V"
+                aria-label="V"
+                className="inline-block align-[-0.05em] h-[0.95em] w-auto mx-[-0.05em] drop-shadow-[0_0_25px_hsl(var(--blood)/.7)]"
+              />E
             </span>
             <span data-text="Comunque Vada" className="glitch block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
-              Comunque <span className="text-blood">V</span>ada
+              Comunque <img
+                src={devilV}
+                alt="V"
+                aria-label="V"
+                className="inline-block align-[-0.05em] h-[0.95em] w-auto mx-[-0.03em] drop-shadow-[0_0_18px_hsl(var(--blood)/.6)]"
+              />ada
             </span>
           </h1>
 
