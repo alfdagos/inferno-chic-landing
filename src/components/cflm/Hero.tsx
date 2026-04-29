@@ -43,7 +43,7 @@ const Hero = () => {
                 alt="V"
                 aria-label="V"
                 style={{ verticalAlign: "baseline" }}
-                className="inline-block h-[1.1em] w-auto mx-[-0.02em] drop-shadow-[0_0_25px_hsl(var(--blood)/.7)]"
+                className="inline-block h-[0.95em] w-auto mx-[-0.02em] drop-shadow-[0_0_25px_hsl(var(--blood)/.7)]"
               />E
             </span>
             <span className="block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
@@ -52,7 +52,7 @@ const Hero = () => {
                 alt="V"
                 aria-label="V"
                 style={{ verticalAlign: "baseline" }}
-                className="inline-block h-[1.1em] w-auto mx-[-0.02em] drop-shadow-[0_0_18px_hsl(var(--blood)/.6)]"
+                className="inline-block h-[0.95em] w-auto mx-[-0.02em] drop-shadow-[0_0_18px_hsl(var(--blood)/.6)]"
               />ada
             </span>
           </h1>
