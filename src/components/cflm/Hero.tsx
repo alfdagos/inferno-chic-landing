@@ -42,7 +42,7 @@ const Hero = () => {
                 src={devilV}
                 alt="V"
                 aria-label="V"
-                className="inline-block align-middle h-[1.4em] w-auto mx-[-0.08em] drop-shadow-[0_0_25px_hsl(var(--blood)/.7)]"
+                className="inline-block align-[-0.18em] h-[0.95em] w-auto mx-[-0.02em] drop-shadow-[0_0_25px_hsl(var(--blood)/.7)]"
               />E
             </span>
             <span className="block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
