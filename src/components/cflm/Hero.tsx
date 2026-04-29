@@ -37,7 +37,7 @@ const Hero = () => {
 
           <h1 className="font-logo font-normal leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
             <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
-            <span className="block text-[14vw] md:text-[7.5vw] text-foreground">
+            <br/><span className="block text-[14vw] md:text-[7.5vw] text-foreground">
               BE<img
                 src={devilV}
                 alt="V"
@@ -47,7 +47,7 @@ const Hero = () => {
               />E
             </span>
             <span className="block text-[8vw] md:text-[4.4vw] text-foreground/95 mt-2 uppercase">
-              Comunque <img
+              Comunque <br/><img
                 src={devilV}
                 alt="V"
                 aria-label="V"
