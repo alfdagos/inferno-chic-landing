@@ -103,7 +103,7 @@ const Gallery = () => (
       <Reveal delay={200}>
         <p className="mt-16 md:mt-24 text-center font-bodoni italic text-xl md:text-3xl text-foreground/70">
           Questa è solo un'anteprima.{" "}
-          <span className="text-blood not-italic">Il resto, l'1 Agosto.</span>
+          <span className="text-blood not-italic">Il resto, il 1° Agosto.</span>
         </p>
       </Reveal>
     </div>
