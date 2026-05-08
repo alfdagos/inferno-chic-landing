@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
 
-const TARGET = new Date("2026-08-01T22:00:00+02:00").getTime();
+const TARGET = new Date("2026-08-01T21:00:00+02:00").getTime();
 
 const calc = () => {
   const diff = Math.max(0, TARGET - Date.now());

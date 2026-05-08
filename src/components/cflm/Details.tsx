@@ -4,7 +4,7 @@ import martini from "@/assets/martini-devil.jpg";
 const items = [
   { k: "Data", v: "01.08.2026", note: "Sabato. Chiaro?" },
   { k: "Location", v: "Chiedi in giro", note: "Davvero. Non lo diciamo." },
-  { k: "Orario", v: "22:00 → ?", note: "Finché reggi." },
+  { k: "Orario", v: "21:00 → ?", note: "Finché reggi." },
 ];
 
 const Details = () => (
