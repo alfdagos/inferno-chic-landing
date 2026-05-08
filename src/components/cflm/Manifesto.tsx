@@ -6,7 +6,7 @@ const Manifesto = () => (
 
     <div className="relative mx-auto max-w-5xl px-6 md:px-12">
       <Reveal>
-        <p className="mb-10 text-xs uppercase tracking-[0.5em] text-blood">§ Manifesto</p>
+        <p className="mb-10 text-xs uppercase tracking-[0.5em] text-blood">§ After the Ordinary</p>
       </Reveal>
       <Reveal delay={120}>
         <h2 className="font-logo text-5xl md:text-8xl leading-[1] tracking-tight text-foreground">
