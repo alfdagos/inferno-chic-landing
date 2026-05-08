@@ -58,7 +58,7 @@ const Hero = () => {
           </h1>
 
           <p
-            className="mt-10 max-w-md text-base md:text-lg text-foreground/85 leading-relaxed animate-fade-up"
+            className="mt-10 max-w-md text-base md:text-lg text-foreground/85 leading-relaxed animate-fade-up font-logo"
             style={{ animationDelay: ".4s" }}
           >
             Se devi chiedere cos'è,
