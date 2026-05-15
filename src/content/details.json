@@ -1,0 +1,8 @@
+{
+  "section_label": "§ Dettagli (i pochi)",
+  "items": [
+    { "key": "Data",     "value": "01.08.2026",    "note": "Sabato. Chiaro?" },
+    { "key": "Location", "value": "Chiedi in giro", "note": "Davvero. Non lo diciamo." },
+    { "key": "Orario",   "value": "21:00 → ?",      "note": "Finché reggi." }
+  ]
+}

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import Reveal from "./Reveal";
+import content from "@/content/countdown.json";
 
-const TARGET = new Date("2026-08-01T21:00:00+02:00").getTime();
+const TARGET = new Date(content.target_date).getTime();
 
 const calc = () => {
   const diff = Math.max(0, TARGET - Date.now());
@@ -34,14 +35,14 @@ const Countdown = () => {
       <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 h-[300px] w-[600px] rounded-full bg-blood/15 blur-[140px]" />
       <div className="relative mx-auto max-w-[1200px] px-6 md:px-12 text-center">
         <Reveal>
-          <p className="text-xs uppercase tracking-[0.5em] text-blood mb-6">§ Countdown</p>
+          <p className="text-xs uppercase tracking-[0.5em] text-blood mb-6">{content.section_label}</p>
           <h2 className="font-logo text-4xl md:text-6xl leading-[0.95] tracking-tight text-foreground mb-4">
             Manca <span className="italic text-blood">poco</span>.
             <br />
             E tu non sei <span className="italic">ancora</span> pronto.
           </h2>
           <p className="font-bodoni italic text-base md:text-lg text-foreground/55 mb-16 md:mb-20">
-            01 Agosto 2026 — il tempo non aspetta nemmeno te.
+            {content.date_label}
           </p>
         </Reveal>
 

@@ -1,0 +1,112 @@
+backend:
+  name: github
+  repo: alfdagos/inferno-chic-landing
+  branch: main
+
+media_folder: public/images/uploads
+public_folder: /images/uploads
+
+locale: it
+
+collections:
+  - name: content
+    label: Contenuto Pagina
+    files:
+
+      # ─── HERO ────────────────────────────────────────────────────────────────
+      - name: hero
+        label: Hero
+        file: src/content/hero.json
+        fields:
+          - { name: event_name,     label: "Nome evento",         widget: string,   default: "CFLM" }
+          - { name: date_display,   label: "Data (display)",      widget: string,   default: "01 · 08 · 2026" }
+          - { name: nav_period,     label: "Periodo nav",         widget: string,   default: "Summer · MMXXVI" }
+          - { name: tagline_line1,  label: "Tagline — riga 1",    widget: string,   default: "Se devi chiedere cos'è," }
+          - { name: tagline_line2,  label: "Tagline — riga 2",    widget: string,   default: "forse non è roba per te." }
+          - { name: cta_button,     label: "Testo CTA principale", widget: string,  default: "Segnatelo. O pentitene." }
+
+      # ─── MANIFESTO ───────────────────────────────────────────────────────────
+      - name: manifesto
+        label: Manifesto
+        file: src/content/manifesto.json
+        fields:
+          - { name: section_label,      label: "Label sezione",     widget: string, default: "§ After the Ordinary" }
+          - { name: heading_line1,      label: "Heading — riga 1",  widget: string, default: "Non è una" }
+          - { name: heading_word1,      label: "Parola in rosso 1", widget: string, default: "festa" }
+          - { name: heading_line2,      label: "Heading — riga 2",  widget: string, default: "Non è un" }
+          - { name: heading_word2,      label: "Parola corsivo 2",  widget: string, default: "evento" }
+          - { name: subtitle_prefix,    label: "Sottotitolo — prefisso", widget: string, default: "È quello che succede quando smetti di fare" }
+          - { name: subtitle_highlight, label: "Sottotitolo — parola in grassetto", widget: string, default: "il bravo" }
+
+      # ─── COUNTDOWN ───────────────────────────────────────────────────────────
+      - name: countdown
+        label: Countdown
+        file: src/content/countdown.json
+        fields:
+          - { name: section_label, label: "Label sezione",       widget: string,   default: "§ Countdown" }
+          - { name: target_date,   label: "Data e ora evento",   widget: datetime, default: "2026-08-01T21:00:00+02:00", date_format: "DD.MM.YYYY", time_format: "HH:mm" }
+          - { name: heading_line1, label: "Heading — riga 1",    widget: string,   default: "Manca poco." }
+          - { name: heading_line2, label: "Heading — riga 2",    widget: string,   default: "E tu non sei ancora pronto." }
+          - { name: date_label,    label: "Etichetta data",      widget: string,   default: "01 Agosto 2026 — il tempo non aspetta nemmeno te." }
+
+      # ─── DETAILS ─────────────────────────────────────────────────────────────
+      - name: details
+        label: Dettagli Evento
+        file: src/content/details.json
+        fields:
+          - { name: section_label, label: "Label sezione", widget: string, default: "§ Dettagli (i pochi)" }
+          - name: items
+            label: Righe dettaglio
+            widget: list
+            fields:
+              - { name: key,   label: "Etichetta",   widget: string }
+              - { name: value, label: "Valore",       widget: string }
+              - { name: note,  label: "Nota corsiva", widget: string }
+
+      # ─── EXPECTATIONS ────────────────────────────────────────────────────────
+      - name: expectations
+        label: Cosa Aspettarti
+        file: src/content/expectations.json
+        fields:
+          - { name: section_label,    label: "Label sezione",          widget: string, default: "§ Cosa aspettarti" }
+          - { name: heading,          label: "Heading",                 widget: string, default: "Poco." }
+          - { name: heading_italic,   label: "Heading — parte corsiva", widget: string, default: "Ma bene." }
+          - name: items
+            label: Card aspettative
+            widget: list
+            fields:
+              - { name: number,   label: "Numero",     widget: string }
+              - { name: title,    label: "Titolo",     widget: string }
+              - { name: subtitle, label: "Sottotitolo (corsivo)", widget: string }
+
+      # ─── DRESS CODE ──────────────────────────────────────────────────────────
+      - name: dresscode
+        label: Dress Code
+        file: src/content/dresscode.json
+        fields:
+          - { name: section_label,     label: "Label sezione",          widget: string, default: "§ Dress Code" }
+          - { name: heading,           label: "Heading (glitch word)",   widget: string, default: "Vestiti" }
+          - { name: heading_highlight, label: "Parola in rosso",         widget: string, default: "bene" }
+          - { name: subtitle,          label: "Sottotitolo",             widget: string, default: "O almeno prova a non rovinare le foto." }
+          - name: tags
+            label: Tag dress code
+            widget: list
+
+      # ─── FINAL CTA / RSVP ────────────────────────────────────────────────────
+      - name: final_cta
+        label: CTA Finale (RSVP)
+        file: src/content/final-cta.json
+        fields:
+          - { name: section_label,   label: "Label sezione",         widget: string, default: "§ Ultima chiamata" }
+          - name: marquee_items
+            label: Elementi marquee
+            widget: list
+          - { name: heading_line1,   label: "Heading — riga 1",      widget: string, default: "Puoi restare" }
+          - { name: heading_line2,   label: "Heading — riga 2 (corsivo)", widget: string, default: "a casa" }
+          - { name: subtitle_line1,  label: "Sottotitolo — riga 1",  widget: string, default: "Oppure avere una storia da raccontare" }
+          - { name: subtitle_line2,  label: "Sottotitolo — riga 2 (sottolineato)", widget: string, default: "come un sogno" }
+          - { name: cta_default,     label: "Testo CTA",             widget: string, default: "Io vengo. Poi si vede." }
+          - { name: cta_confirmed,   label: "Testo dopo conferma",   widget: string, default: "Gasati! Non deluderci." }
+          - { name: cta_caption,     label: "Caption sotto CTA",     widget: string, default: "Lista esclusiva. Conferma rapida. Notte di sogni." }
+          - { name: footer_tagline,  label: "Footer — tagline",      widget: string, default: "Summer MMXXVI · Beve Comunque Vada" }
+          - { name: footer_disclaimer, label: "Footer — disclaimer", widget: string, default: "Bevi responsabilmente. Forse." }

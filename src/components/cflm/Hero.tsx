@@ -1,6 +1,7 @@
 import logo from "@/assets/cflm-logo.png";
 import devilWoman from "@/assets/devil-woman-1.jpg";
 import devilV from "@/assets/devil-v.png";
+import content from "@/content/hero.json";
 
 const Hero = () => {
   const scrollToCTA = () => {
@@ -14,9 +15,9 @@ const Hero = () => {
 
       {/* Top bar */}
       <nav className="relative z-20 flex items-center justify-between px-6 py-6 md:px-12">
-        <span className="font-logo text-xl tracking-[0.3em] text-foreground">CFLM</span>
+        <span className="font-logo text-xl tracking-[0.3em] text-foreground">{content.event_name}</span>
         <span className="hidden md:block text-xs tracking-[0.4em] uppercase text-foreground/70">
-          Summer · MMXXVI
+          {content.nav_period}
         </span>
         <button
           onClick={scrollToCTA}
@@ -32,11 +33,11 @@ const Hero = () => {
         <div className="md:col-span-7 flex flex-col justify-center">
           <p className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.4em] text-foreground/80 animate-fade-up">
             <span className="inline-block h-px w-10 bg-foreground/60" />
-            Invito · 01 · 08 · 2026
+            Invito · {content.date_display}
           </p>
 
           <h1 className="text-center font-logo font-normal leading-[0.95] tracking-tight animate-fade-up" style={{ animationDelay: ".15s" }}>
-            <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">CFLM</span>
+            <span className="block text-[18vw] md:text-[10vw] text-foreground glow-text">{content.event_name}</span>
             <br/><span className="block text-[14vw] md:text-[7.5vw] text-foreground">
               BE<img
                 src={devilV}
@@ -61,9 +62,9 @@ const Hero = () => {
             className="mt-10 max-w-md text-base md:text-lg text-foreground/85 leading-relaxed animate-fade-up font-logo"
             style={{ animationDelay: ".4s" }}
           >
-            Se devi chiedere cos'è,
+            {content.tagline_line1}
             <br />
-            <span className="text-foreground font-medium">forse non è roba per te.</span>
+            <span className="text-foreground font-medium">{content.tagline_line2}</span>
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4 animate-fade-up" style={{ animationDelay: ".6s" }}>
@@ -71,7 +72,7 @@ const Hero = () => {
               onClick={scrollToCTA}
               className="cta-aggressive group relative inline-flex items-center gap-3 bg-foreground px-8 py-5 text-xs uppercase tracking-[0.35em] text-background pulse-blood hover:bg-blood hover:text-foreground"
             >
-              Segnatelo. O pentitene.
+              {content.cta_button}
               <span className="transition-transform duration-500 group-hover:translate-x-2">→</span>
             </button>
           </div>

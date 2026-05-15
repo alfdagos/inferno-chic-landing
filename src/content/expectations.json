@@ -1,0 +1,11 @@
+{
+  "section_label": "§ Cosa aspettarti",
+  "heading": "Poco.",
+  "heading_italic": "Ma bene.",
+  "items": [
+    { "number": "01", "title": "Drink che non ricorderai",   "subtitle": "di aver ordinato" },
+    { "number": "02", "title": "Gente che non dimenticherai", "subtitle": "anche volendo" },
+    { "number": "03", "title": "Trucco perfetto",             "subtitle": "fino al terzo drink" },
+    { "number": "04", "title": "Zero rimorsi",                "subtitle": "(forse)" }
+  ]
+}

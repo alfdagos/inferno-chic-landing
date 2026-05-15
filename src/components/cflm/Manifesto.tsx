@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import content from "@/content/manifesto.json";
 
 const Manifesto = () => (
   <section className="relative bg-background py-32 md:py-48 overflow-hidden">
@@ -6,20 +7,20 @@ const Manifesto = () => (
 
     <div className="relative mx-auto max-w-5xl px-6 md:px-12">
       <Reveal>
-        <p className="mb-10 text-xs uppercase tracking-[0.5em] text-blood">§ After the Ordinary</p>
+        <p className="mb-10 text-xs uppercase tracking-[0.5em] text-blood">{content.section_label}</p>
       </Reveal>
       <Reveal delay={120}>
         <h2 className="font-logo text-5xl md:text-8xl leading-[1] tracking-tight text-foreground">
-          Non è una <span className="italic text-blood">festa</span>.
+          {content.heading_line1} <span className="italic text-blood">{content.heading_word1}</span>.
           <br />
-          Non è un <span className="italic">evento</span>.
+          {content.heading_line2} <span className="italic">{content.heading_word2}</span>.
         </h2>
       </Reveal>
       <Reveal delay={300}>
         <p className="mt-12 max-w-3xl font-logo italic text-2xl md:text-4xl text-foreground/80 leading-snug">
           È quello che succede
           <br />
-          quando smetti di fare <span className="text-blood not-italic font-bold">il bravo</span>.
+          quando smetti di fare <span className="text-blood not-italic font-bold">{content.subtitle_highlight}</span>.
         </p>
       </Reveal>
     </div>
