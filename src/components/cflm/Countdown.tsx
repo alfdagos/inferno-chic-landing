@@ -31,7 +31,7 @@ const Countdown = () => {
   ];
 
   return (
-    <section className="relative bg-background py-28 md:py-40 overflow-hidden border-t border-blood/15">
+    <section id="countdown" className="relative bg-background py-28 md:py-40 overflow-hidden border-t border-blood/15 scroll-mt-24">
       <div className="pointer-events-none absolute left-1/2 top-0 -translate-x-1/2 h-[300px] w-[600px] rounded-full bg-blood/15 blur-[140px]" />
       <div className="relative mx-auto max-w-[1200px] px-6 md:px-12 text-center">
         <Reveal>
