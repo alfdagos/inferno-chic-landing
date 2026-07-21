@@ -6,7 +6,7 @@
     <title>Reindirizzamento Countdown</title>
     <meta http-equiv="refresh" content="0; url=/#countdown" />
     <script>
-      // Keep query params while redirecting to the countdown anchor.
+      sessionStorage.setItem("cflm-scroll-target", "countdown");
       window.location.replace("/#countdown" + window.location.search);
     </script>
   </head>
