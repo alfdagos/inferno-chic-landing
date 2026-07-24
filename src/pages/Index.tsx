@@ -7,6 +7,7 @@ import Details from "@/components/cflm/Details";
 import Expectations from "@/components/cflm/Expectations";
 import DressCode from "@/components/cflm/DressCode";
 import FinalCTA from "@/components/cflm/FinalCTA";
+import SoldOutModal from "@/components/cflm/SoldOutModal";
 
 const Index = () => {
   useEffect(() => {
@@ -40,6 +41,7 @@ const Index = () => {
 
   return (
     <main className="bg-background text-foreground">
+      <SoldOutModal />
       <Hero />
       <Manifesto />
       <Gallery />
