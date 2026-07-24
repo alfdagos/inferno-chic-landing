@@ -18,7 +18,7 @@ const SoldOutModal = () => {
         <div className="px-8 pb-10 pt-8 sm:px-12 text-center space-y-5">
           {/* Overline */}
           <p className="font-logo text-blood/55 text-[9px] tracking-[0.4em] uppercase">
-            CFLM · Estate 2026
+            CFLM · SUMMER MMXXVI
           </p>
 
           {/* Main title */}
@@ -54,7 +54,7 @@ const SoldOutModal = () => {
             onClick={() => setOpen(false)}
             className="cta-aggressive mt-1 px-8 py-2.5 border border-blood/55 text-blood font-logo text-[10px] tracking-[0.35em] uppercase hover:bg-blood hover:border-blood hover:text-white transition-colors duration-300"
           >
-            Ho capito
+            OK, GASATEVI!
           </button>
         </div>
       </DialogContent>
