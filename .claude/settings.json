@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(/home/alfdagos/.cache/ms-playwright-go/1.57.0/node --version)",
+      "Bash(/snap/hugo/26394/bin/node --version)",
+      "Read(//home/alfdagos/.cache/ms-playwright-go/1.57.0/**)",
+      "Read(//snap/hugo/26394/bin/**)",
+      "Read(//snap/hugo/26394/**)",
+      "Bash(git -C /home/alfdagos/Projects/personal/inferno-chic-landing check-ignore -v node_modules)"
+    ]
+  }
+}
